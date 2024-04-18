@@ -5,15 +5,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css" />
   </head>
-  <body>
+  <body onload="init();">
     <img class="background" src="infographic.png" alt="" />
-    <span id="title" class="title">Bend 97701</span>
+    <span id="title" class="title">{city} {zip}</span>
 
-    <span id="homes-listed" class="description">73 <br> homes</span>
-    <span id="avg-dom" class="description">Average DOM <br> 127</span>
-    <span id="median-list-price" class="description">Median list price <br> $725,000</span>
-    <span id="price-change" class="description">48% price reduction</span>
-    <span id="market-type" class="description">36 (Seller's Market)</span>
+    <span id="homes-listed" class="description">{num_homes_listed} listed <br> homes</span>
+    <span id="avg-dom" class="description">Average DOM <br> {avg_dom}</span>
+    <span id="median-list-price" class="description">Median list price <br> ${median_list_price}</span>
+    <span id="price-change" class="description">{price_change_pct}% price reduction</span>
+    <span id="market-type" class="description">{market_type} (Seller's Market)</span>
 
     <!-- domo.js optional utils -->
     <script src="domo.js"></script>
