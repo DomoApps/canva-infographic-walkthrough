@@ -1,3 +1,61 @@
-body{
-  margin: 0;
+/* Set the body to display the infographic as a background */
+body {
+  width: 100%;
+  height: 100%; /* Full height */
+  margin: 0; /* Remove default margin */
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.title {
+  font-family: "Moon Dance", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10vh; /* Sets the font size to 10vh */
+  color: #000000; /* Sets the text color to black */
+  position: fixed;
+  top: 6%;
+  text-align: center;
+  width: 100%;
+}
+
+.description {
+  font-family: 'Raleway', sans-serif; /* Uses Raleway, with sans-serif as a fallback */
+  font-size: 4vh; /* Sets the font size to 4vh */
+  color: #000000; /* Sets the color to black */
+  position: fixed;
+  text-align: center;
+}
+
+#homes-listed {
+  top: 55%;
+  left: 6%;
+  width: 25%;
+}
+
+#avg-dom {
+  top: 55%;
+  left: 42%;
+  width: 16%;
+}
+
+#median-list-price {
+  top: 55%;
+  left: 72%;
+  width: 20%;
+}
+
+#price-change {
+  top: 85%;
+  left: 15%;
+  width: 32%;
+}
+#market-type {
+  top: 85%;
+  left: 53%;
+  width: 30%;
 }
