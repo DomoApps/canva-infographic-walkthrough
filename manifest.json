@@ -1,0 +1,17 @@
+{
+  "name": "canva infographic walkthrough",
+  "version": "1.0.0",
+  "size": {
+    "width": 1,
+    "height": 1
+  },
+  "mapping": [
+    {
+      "dataSetId": "53f5ad94-9e04-485b-b885-fb89cac64b14",
+      "alias": "infographicData",
+      "fields": []
+    }
+  ],
+  "fileName": "manifest.json",
+  "id": "c86f6e58-2060-4273-9906-13a8ff2da14e"
+}
