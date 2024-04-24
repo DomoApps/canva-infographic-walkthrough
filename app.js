@@ -10,7 +10,7 @@ const mapDomColumns = [
 ];
 
 // function to fetch the dataset
-const fetchData = async () => domo.get('/data/v2/infographicData?limit=100');
+const fetchData = async () => domo.get('/data/v2/infographicData?limit=100&useBeastMode=true');
 
 // formatting price number
 const formatPrice = (price) => {
@@ -38,8 +38,7 @@ const interpolateData = (data) => {
   mapDomColumns.forEach(value => {
     let columnValue = "";
     const defaultValue = document.getElementById(value.id).innerHTML.toString();
-    console.log("value", value);
-
+    
     if (value.price) {
       columnValue = formatPrice(row[value.column]);
     } else if (value.market_type) {
@@ -48,10 +47,7 @@ const interpolateData = (data) => {
       columnValue = row[value.column];
     }
 
-    console.log(columnValue);
     const newValue = defaultValue.replaceAll(`{${value.key}}`, columnValue);
-    console.log(newValue);
-
     document.getElementById(value.id).innerHTML = newValue;
   });
 }
